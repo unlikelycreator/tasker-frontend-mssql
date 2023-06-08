@@ -1,0 +1,49 @@
+.ta-item-delete{
+    background-color: #1d1d1d00;
+    border: none;
+    font-size: 25px;
+    color: white;
+  }
+  .ta-item-delete:hover{
+    color:#e99f4c ;
+    cursor: pointer;
+  }
+  .ta-act-add{
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+    border: none;
+  }
+
+  .ta-act-add:hover{
+    background-color:#e99f4c ;
+    cursor: pointer;
+  }
+
+  .ta-select {
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    color: #333333;
+    width: 100%;
+  }
+  
+  .ta-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .ta-option {
+    font-size: 16px;
+  }
+
+  .act-table{
+    width: 100%;
+  }
+  .act-table > thead{
+    height: 40px;
+    background-color: #007bff;
+  }
