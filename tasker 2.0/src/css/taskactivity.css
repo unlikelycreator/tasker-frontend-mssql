@@ -1,0 +1,176 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5efe7;
+  width: 95%;
+  height: 90%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.ta-modal-table-container {
+  width: 100%;
+}
+
+.modal-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #1d1d1d;
+}
+
+.modal input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #171717;
+  border-radius: 3px;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  color: #1d1d1d;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.modal button[type="submit"],
+.modal .modal-btn {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #f45050;
+  outline: none;
+  background-color: #213555;
+  color: white;
+  cursor: pointer;
+}
+
+.modal button[type="submit"]:hover,
+.modal .modal-btn:hover {
+  background-color: #f45050;
+  border: 1px solid #213555;
+}
+
+.ta-modal-btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #f45050;
+  outline: none;
+  background-color: #213555;
+  color: white;
+  cursor: pointer;
+}
+
+.ta-modal-btn:hover{
+  background-color: #f45050;
+  border: 1px solid #213555;
+}
+
+.ta-modal-close-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #f45050;
+  outline: none;
+  background-color: #213555;
+  color: white;
+  cursor: pointer;
+}
+
+.ta-modal-close-btn:hover{
+  background-color: #f45050;
+  border: 1px solid #213555;
+}
+
+.ta-item-delete {
+  background-color: #1d1d1d00;
+  border: none;
+  font-size: 25px;
+  color: #213555;
+}
+.ta-item-delete:hover {
+  color: #f45050;
+  cursor: pointer;
+}
+.ta-act-add {
+  padding: 0px 5px 0px 5px;
+  font-size: 20px;
+  border: none;
+}
+
+.ta-act-add:hover {
+  background-color: #f45050;
+  cursor: pointer;
+}
+
+.ta-select {
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+}
+
+.ta-select:focus {
+  outline: none;
+  border-color: #f45050;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.ta-option {
+  font-size: 16px;
+}
+
+.act-table {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+.act-table > thead {
+  height: 40px;
+  background-color: #4f709c;
+  color: white;
+  border: none;
+}
+.act-table {
+  border-collapse: collapse;
+}
+
+.act-table th,
+.act-table td {
+  border: none;
+  text-align: center;
+}
+
+.act-table tr {
+  border: none;
+}

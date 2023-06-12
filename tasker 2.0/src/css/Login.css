@@ -1,0 +1,139 @@
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFF4F4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-div {
+  background-color: #606C5D;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  min-width: 300px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.login-screen h1 {
+  color: white;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-email,
+.login-password {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #dadada;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #FFF4F4;
+  color: #1d1d1d;
+  margin-top: 10px;
+}
+
+.login-btn {
+  padding: 10px;
+  background-color: #F1C376;
+  color: #1d1d1d;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background-color: #e7c569;
+  color: black;
+}
+
+/*Animation*/
+.animated-border-box,
+.animated-border-box-glow {
+  background-color: #606C5D;
+  padding: 40px;
+  max-width: 400px;
+  min-width: 300px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  /* Border Radius */
+  border-radius: 10px;
+}
+
+.animated-border-box-glow {
+  overflow: hidden;
+  /* Glow Blur */
+  filter: blur(20px);
+}
+
+.animated-border-box:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    rgba(251, 253, 251, 0.985),
+    #606C5D,
+    #F1C376 25%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-box:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* border width */
+  left: 5px;
+  top: 5px;
+  /* double the px from the border width left */
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  /*bg color*/
+  background: #606C5D;
+  /*box border radius*/
+  border-radius: 7px;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #606C5D;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}

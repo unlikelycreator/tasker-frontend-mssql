@@ -1,0 +1,146 @@
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-toggle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f45050;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.menu-toggle span:hover {
+  transform: scale(1.1);
+  background-color: #213555;
+}
+
+.menu-toggle svg {
+  color: #ffffff;
+}
+
+.menu-toggle svg:hover {
+  color: #ffffff;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  padding: 40px 20px;
+  background-color: #16161a;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.menu-container.open {
+  transform: translateX(0%);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-container h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #fafafa;
+}
+
+.menu-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-close svg {
+  color: #333;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86%;
+}
+.authenticated-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.authenticated-btn button {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 20px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+.menu-buttons button.active,
+.menu-buttons button:hover {
+  background-color: #f45050;
+  color: white;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 20px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  background-color: #4f709c;
+  color: #f7f7f7;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+.logout-btn:hover {
+  background-color: #007bff !important;
+  color: black !important;
+}
+
+@media (max-width: 670px) {
+  .menu-container {
+    overflow: auto;
+  }
+  .logout-btn {
+    padding: 18px 10px;
+    margin-bottom: 20px;
+  }
+}
